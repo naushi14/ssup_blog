@@ -37,7 +37,11 @@
   
   #page-content {
     flex: 1 0 auto;
-    background-color: lightgrey;
+    // background-color: lightgrey;
+    background-image: asset-url('back.jpg');
+    background-position: center center;
+    background-repeat: repeat-y;
+    background-size: cover;
   }
   
   #sticky-footer {

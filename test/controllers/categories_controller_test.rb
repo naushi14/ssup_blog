@@ -3,7 +3,7 @@ require 'test_helper'
 class CategoriesControllerTest < ActionDispatch::IntegrationTest
   setup do
     @category = Category.create(name: "Sports")
-    @admin_user = User.create(username: "johndoe", email: "johndoe@example.com",
+    @admin_user = User.create(username: "naushi14", email: "naushi@g.com",
     password: "password", admin: true)
   end
 
@@ -34,7 +34,7 @@ class CategoriesControllerTest < ActionDispatch::IntegrationTest
 
     assert_redirected_to categories_url
   end
-  
+
   test "should show category" do
     get category_url(@category)
     assert_response :success
